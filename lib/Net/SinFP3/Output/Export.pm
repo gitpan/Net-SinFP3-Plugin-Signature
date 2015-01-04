@@ -1,5 +1,5 @@
 #
-# $Id: Export.pm 13 2012-08-31 08:40:28Z gomor $
+# $Id: Export.pm 22 2015-01-04 16:42:47Z gomor $
 #
 package Net::SinFP3::Output::Export;
 use strict;
@@ -28,7 +28,7 @@ sub run {
    }
 
    my $idList = $db->searchSignatureIds;
-   for my $id (sort { $a <=> $b } map { $_->{idSignature} } @$idList) {
+   for my $id (sort { $a <=> $b } @$idList) {
       my $s = $db->retrieveSignature($id);
       $s    = $db->lookupPatterns($s);
       _printSignature($db, $s);
@@ -115,7 +115,7 @@ Patrice E<lt>GomoRE<gt> Auffret
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2011-2012, Patrice E<lt>GomoRE<gt> Auffret
+Copyright (c) 2011-2015, Patrice E<lt>GomoRE<gt> Auffret
 
 You may distribute this module under the terms of the Artistic license.
 See LICENSE.Artistic file in the source distribution archive.

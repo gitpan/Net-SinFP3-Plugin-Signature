@@ -1,5 +1,5 @@
 #
-# $Id: AddSignatureP.pm 19 2012-09-11 12:40:54Z gomor $
+# $Id: AddSignatureP.pm 22 2015-01-04 16:42:47Z gomor $
 #
 package Net::SinFP3::Output::AddSignatureP;
 use strict;
@@ -373,7 +373,7 @@ Patrice E<lt>GomoRE<gt> Auffret
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2011-2012, Patrice E<lt>GomoRE<gt> Auffret
+Copyright (c) 2011-2015, Patrice E<lt>GomoRE<gt> Auffret
 
 You may distribute this module under the terms of the Artistic license.
 See LICENSE.Artistic file in the source distribution archive.

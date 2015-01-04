@@ -1,5 +1,5 @@
 #
-# $Id: ExportP.pm 13 2012-08-31 08:40:28Z gomor $
+# $Id: ExportP.pm 22 2015-01-04 16:42:47Z gomor $
 #
 package Net::SinFP3::Output::ExportP;
 use strict;
@@ -29,7 +29,7 @@ sub run {
    }
 
    my $idList = $db->searchSignaturePIds;
-   for my $id (sort { $a <=> $b } map { $_->{idSignatureP} } @$idList) {
+   for my $id (sort { $a <=> $b } @$idList) {
       my $s = $db->retrieveSignatureP($id);
       $s    = $db->lookupPatternsP($s);
       _printSignatureP($db, $s);
@@ -99,7 +99,7 @@ __END__
 
 =head1 NAME
 
-Net::SinFP3::Output::ExportP - export passive signature
+Net::SinFP3::Output::ExportP - export passive signatures
 
 =head1 DESCRIPTION
 
@@ -111,7 +111,7 @@ Patrice E<lt>GomoRE<gt> Auffret
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2011-2012, Patrice E<lt>GomoRE<gt> Auffret
+Copyright (c) 2011-2015, Patrice E<lt>GomoRE<gt> Auffret
 
 You may distribute this module under the terms of the Artistic license.
 See LICENSE.Artistic file in the source distribution archive.

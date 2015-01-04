@@ -1,5 +1,5 @@
 #
-# $Id: AddSignature.pm 18 2012-09-11 12:17:24Z gomor $
+# $Id: AddSignature.pm 22 2015-01-04 16:42:47Z gomor $
 #
 package Net::SinFP3::Output::AddSignature;
 use strict;
@@ -365,7 +365,7 @@ __END__
 
 =head1 NAME
 
-Net::SinFP3::Output::AddSignature - add a signature to SinFP3 database
+Net::SinFP3::Output::AddSignature - add an active signature to SinFP3 database
 
 =head1 DESCRIPTION
 
@@ -391,7 +391,7 @@ Patrice E<lt>GomoRE<gt> Auffret
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2011-2012, Patrice E<lt>GomoRE<gt> Auffret
+Copyright (c) 2011-2015, Patrice E<lt>GomoRE<gt> Auffret
 
 You may distribute this module under the terms of the Artistic license.
 See LICENSE.Artistic file in the source distribution archive.
